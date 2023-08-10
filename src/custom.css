@@ -469,11 +469,9 @@ ul.menu-list li a {
         padding: 10px;
     }
 
-    .registration form button {
+    .registration form #rgstr_btn {
         background-color: #0d6efd;
         color: #ffffff;
-        width: 100%;
-        height: 55px;
     }
 
 
@@ -485,3 +483,4 @@ ul.menu-list li a {
         margin-bottom: 30px;
     }
 
+    

@@ -19,7 +19,7 @@ function Header(){
 <p className="eur">EUR</p>    
 <p className="eng">English</p>
 <img className="search" src="/images/search.png" alt="search"/>
-<a href="/my-account"><img className="user" src="/images/user.svg" alt="user"/></a>
+<a href="/create-account"><img className="user" src="/images/user.svg" alt="user"/></a>
 <img className="cart" src="/images/cart.png" alt="cart"/>
 
 </div>

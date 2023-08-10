@@ -19,7 +19,7 @@ function Login(){
        <input type="password" id="passwordLogin" name="passwordLogin" placeholder="Password"/><br/><br/>
        <input type="submit" value="Login"/>
       </form> 
-      <a href="/my-account">New user? Create an account</a>
+      <a href="/create-account">New user? Create an account</a>
       </div>
       </div>
       

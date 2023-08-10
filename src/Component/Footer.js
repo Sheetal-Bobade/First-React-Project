@@ -3,6 +3,7 @@ import { BiLogoFacebook } from "react-icons/bi";
 import { BiLogoTwitter } from "react-icons/bi";
 import { BiLogoInstagram } from "react-icons/bi";
 import { BiLogoYoutube } from "react-icons/bi";
+import { Link } from "react-router-dom";
 function Footer(){
     return(
         <div className="footer-sec">
@@ -22,7 +23,7 @@ function Footer(){
                 <h3>Support</h3>
                     <ul>
                         <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><a href="/contact-us">Contact us</a></li>
                         <li><a href="#">Warranty</a></li>
                         <li><a href="#">Shipping Policy</a></li>
                         <li><a href="#">Return Policy</a></li>
