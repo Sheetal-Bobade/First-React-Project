@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import Home from './Home';
-import Cycling from "./Cycling";
-import About from "./AboutAvaka";
-import Register from "./Register";
-import Login from "./Login";
-import Contact from "./Contact";
+import Home from './Pages/Home';
+import Cycling from "./Pages/Cycling";
+import About from "./Pages/AboutAvaka";
+import Register from "./Pages/Register";
+import Login from "./Pages/Login";
+import Contact from "./Pages/Contact";
 function Allroutes(){
     return(
         <Routes>

@@ -1,9 +1,9 @@
 import {useEffect, useState} from "react";
-import './App.css';
-import Topheader from './Component/Topheader';
-import Header from './Component/Header';
-import Footer from './Component/Footer';
-import './custom.css';
+import '../App.css';
+import Topheader from '../Component/Topheader';
+import Header from '../Component/Header';
+import Footer from '../Component/Footer';
+import '../custom.css';
 
 function Contact(){
     const [user, setUser]= useState({
