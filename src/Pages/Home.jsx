@@ -1,15 +1,17 @@
-import React from "react";
+import {createContext} from "react";
 import '../App.css';
 import Topheader from '../Component/Topheader';
 import TransparentHeader from '../Component/TransparentHeader';
 import Footer from '../Component/Footer';
 import '../custom.css';
-import SimpleSlider from '../Mainslider';
-import MainCarousel from "../MainCarousel";
+import SimpleSlider from '../Component/Mainslider';
+import MainCarousel from "../Component/MainCarousel";
+
 
 
 
 function Home(){
+ 
     return(
         <div className="App">
           <div className="common-header">

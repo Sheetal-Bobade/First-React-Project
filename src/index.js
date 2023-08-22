@@ -8,13 +8,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';  
 import Popper from 'popper.js';  
 import 'bootstrap/dist/js/bootstrap.bundle.min';  
-
+import {Context} from './Pages/Context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+<Context>
   <BrowserRouter>
     <App />
   </BrowserRouter>
+</Context>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

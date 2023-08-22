@@ -1,15 +1,73 @@
-import {useEffect, useState} from "react";
+import {useEffect, useState, useContext, useRef, useReducer, useMemo, useCallback} from "react";
 import '../App.css';
 import Topheader from '../Component/Topheader';
 import Header from '../Component/Header';
 import Footer from '../Component/Footer';
 import '../custom.css';
+import { Name } from "./Context";
+import useCustomHook from "../Component/useCustomHook";
+import ChildA from "./ChildA";
 
-function Contact(){
+const initialstate=0;
+const reducer = (state, action)=>{
+  switch(action){
+    case "Increment":
+      return state +1
+    case "Decrement":
+      return state -1
+    default:
+      return state 
+  }
+}
+
+function Contact(props){
+
+    
+  const [add1, setAdd1] = useState(0);
+  const [count1, setCount1] = useState(0);
+  const Learning = useCallback( () =>{
+
+  },[count1])
+
+
+  const [add, setAdd] = useState(0);
+  const [minus, setMinus] = useState(100)
+
+  const multiplication= useMemo(function multiply(){
+    return add*20;
+  },[add])
+
+  const division= useMemo(function devide(){
+    return minus/5;
+  },[minus])
+
+  const [count,dispatch]  =useReducer(reducer,initialstate)
+
+  const clickedButton = useCustomHook(0 , "SecondComponent");
+
+
+  const [inputValue, setInputValue] = useState("");
+  const previousInputValue = useRef("");
+
+  useEffect(() => {
+    previousInputValue.current = inputValue;
+  }, [inputValue]);
+
+  function Reset(){
+    setInputValue("")
+  }
+
+
+  
+
+
+
+
     const [user, setUser]= useState({
       name:""
      });
      const [arr, setArr] = useState([]);
+     const val = useContext(Name);
  
      let name, value;
      const handleInputs = (e) =>{
@@ -21,7 +79,6 @@ function Contact(){
        setUser({...user, [name]:value});
        
      }
- 
      const handleSubmit = (e) =>{
       e.preventDefault();
      setArr((arr)=>[...arr, user]);
@@ -53,7 +110,43 @@ function Contact(){
             </form>
             
       </div>
+      <h1>My Name is {val}</h1><br/><br/>
+      <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)}
+      />
+
+      <button onClick={Reset}>Reset</button>
       
+      
+      <h2>Current Value: {inputValue}</h2>
+      <h2>Previous Value: {previousInputValue.current}</h2>
+
+      <div>
+			<h1> This is the First Component</h1>
+     
+			<button onClick={clickedButton}>
+				Click here!
+			</button><br/><br/>
+      <div>Count : {count}</div>
+      <button onClick={()=>dispatch("Increment")}>Increment</button>
+      <button onClick={()=>dispatch("Decrement")}>Decrement</button><br/><br/>
+
+      <p>Multiplication Value : {multiplication}</p>
+      <p>Division Value : {division}</p>
+      <button onClick={()=>setAdd(add +1)}>Addition</button>
+      <span>{add}</span><br/>
+      <button onClick={()=>setMinus(minus -1)}>Substraction</button>
+      <span>{minus}</span><br/><br/>
+      <h3>Usecallback Hook</h3><br/>
+      <ChildA Learning={Learning} count1={count1}/> 
+      <span>{add1}</span>
+
+      <button onClick={()=> setAdd1(add1+1)}>Addition</button>
+      
+      <span>{count1}</span>
+      <button onClick={()=> setCount1(count1+2)}>Count</button>
+
+
+		</div>
       </div>
       
       <Footer/>
