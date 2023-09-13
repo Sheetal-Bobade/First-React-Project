@@ -1,77 +1,125 @@
-import {createContext} from "react";
-import '../App.css';
-import Topheader from '../Component/Topheader';
-import TransparentHeader from '../Component/TransparentHeader';
-import Footer from '../Component/Footer';
-import '../custom.css';
-import SimpleSlider from '../Component/Mainslider';
-import MainCarousel from "../Component/MainCarousel";
+import React from "react";
+import Sidenav from "../Component/Sidenav";
+import Navbar from "../Component/Navbar";
+import AccordianDash from "../Component/AccordianDash";
+import BarChart from "../Charts/BarChart";
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Stack from '@mui/material/Stack';
+import StorefrontIcon from '@mui/icons-material/Storefront';
+import CreditCardIcon from '@mui/icons-material/CreditCard';
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import CountUp from 'react-countup';
 
 
-
-
-function Home(){
- 
+function DashboardHome(){
     return(
-        <div className="App">
-          <div className="common-header">
-          <Topheader/>
-          <TransparentHeader/>
-          </div>
+
+      <div className="bgcolor">
+<div>
+           <Navbar/>
+            <Box height={80} />
+            <Box sx={{ display: 'flex' }}>
+            <Sidenav/>
+            <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+        <Grid container spacing={2}>
+        <Grid item xs={8}>
+    <Stack spacing={2} direction="row">
+    <Card sx={{ minWidth: 49 + "%", height:"150px"}} className="gradient">
+      <CardContent>
+        <div className="iconstyle">
+        <CreditCardIcon/>
+        </div>
+        <Typography gutterBottom variant="h5" component="div" sx={{color:"#ffffff"}}>
+         $<CountUp delay={0.2} end={500.00} />
+        </Typography>
+        <Typography gutterBottom variant="body2" component="div" sx={{color:"#ccd1d1"}}>
+         Total Earnings
+        </Typography>
+        
+      </CardContent>
       
-      <div className="main-slider">
-      <SimpleSlider/>
+    </Card>
+
+    <Card sx={{ minWidth: 49 + "%", height:"150px" }} className="gradientlight">
+      <CardContent>
+        <div className="iconstyle">
+         <ShoppingBagIcon/>
+        </div>
+        <Typography gutterBottom variant="h5" component="div" sx={{color:"#ffffff"}}>
+        $<CountUp delay={0.1} end={900.00} />
+        </Typography>
+        <Typography gutterBottom variant="body2" component="div" sx={{color:"#ccd1d1"}}>
+         Total Orders
+        </Typography>
+        
+      </CardContent>
+    </Card>
+    </Stack>
+
+        </Grid>
+        <Grid item xs={4}>
+      <Stack spacing={2}>
+      <Card sx={{ maxWidth: 345 }}  className="gradientlight">
+      <Stack spacing={2} direction="row">
+        <div className="iconstyle">
+        <StorefrontIcon/>
+        </div>
+        
+        <div className="paddingall">
+        <span className="pricetitle">$203k</span><br/>
+        <span className="pricesubtitle">Total Income</span>
+        </div>
+        </Stack>
+        
+   
+    </Card>
+
+    <Card sx={{ maxWidth: 345 }}>
+      <Stack spacing={2} direction="row">
+        <div className="iconstyleblack">
+        <StorefrontIcon/>
+        </div>
+        
+        <div className="paddingall">
+        <span className="pricetitle">$203k</span><br/>
+        <span className="pricesubtitle">Total Income</span>
+        </div>
+        </Stack>
+    </Card>
+        </Stack>
+        </Grid>
+      </Grid>
+      <Box height={20} />
+
+      <Grid container spacing={2}>
+        <Grid item xs={8}>
+    <Card sx={{ height: 60 + "vh" }}>
+      <CardContent>
+        <BarChart/>
+      </CardContent>
+    </Card>
+        </Grid>
+        <Grid item xs={4}>
+    <Card sx={{ height: 60 + "vh" }}>
+      <CardContent>
+        <AccordianDash/>
+      </CardContent>
+    </Card>
+        </Grid>
+        
+      </Grid>
+            </Box>
+            
+            </Box>
+            
+        </div>
       </div>
-
-      <div className="home-sec2">
-       <h2>World's Best Electric City Bikes</h2> 
-       <div className="row">
-        <div className="col-md-3">
-        <div className="img-div"><img src="images/shipping.png"/></div>
-        <h3>Free shipping</h3>
-        <p>from EU warehouse 2-6 days delivery time</p>
-        </div>
-        <div className="col-md-3">
-        <div className="img-div"><img src="images/customer.png"/></div>
-        <h3>EU Customer Support</h3>
-        <p>Talk to us via chat</p>
-        </div>
-        <div className="col-md-3">
-        <div className="img-div"><img src="images/credit.png"/></div>
-        <h3>Pay by installments</h3>
-        <p>Secure payment through Klarna</p>
-        </div>
-        <div className="col-md-3">
-        <div className="img-div"><img src="images/thumbsup.png"/></div>
-        <h3>Warranty and Guarantee</h3>
-        <p>1-Year Warranty</p>
-        </div>
-       </div>
-      </div>
-
-      <div className="home-sec3">
-      <div className="row">
-        <div className="col-md-6 left">
-        <h2>eBikes on Sale</h2>
-        </div>
-        <div className="col-md-6 right">
-        <a>View All</a>
-        </div>
-      </div>
-
-
-        <MainCarousel/>
-      </div>
-
-      <Footer/>
-    </div>
-
-
-
-
-
-
-    );
+        
+    )
 }
 
-export default Home;
+export default DashboardHome

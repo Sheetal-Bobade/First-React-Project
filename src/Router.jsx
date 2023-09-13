@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Home from './Pages/Home';
+import Avaka from "./Pages/Avaka";
 import Cycling from "./Pages/Cycling";
 import About from "./Pages/AboutAvaka";
 import Register from "./Pages/Register";
@@ -11,13 +11,18 @@ import Newapp from "./Pages/newApi";
 import TodoList from "./Pages/TodoList";
 import Axios from "./Pages/Axios";
 import AxiosPost from "./Pages/AxiosPost";
+import Dashboard from "./Pages/Dashboard";
+import DashboardHome from "./Pages/Home";
+import AboutDashboard from "./Pages/About";
+import Settings from "./Pages/Settings";
+import Products from "./Pages/Products";
 
 function Allroutes(){
     return(
         <Routes>
-            <Route path="/" element={ <Home/> }/>
+            <Route path="/" element={ <Avaka/> }/>
             <Route path="/cycling" element={ <Cycling/> }/>
-            <Route path="/about" element={ <About/> }/>
+            <Route path="/about-avaka" element={ <About/> }/>
             <Route path="/create-account" element={ <Register/> }  />
             <Route path="/user-login" element={ <Login/> }  />
             <Route path="/contact-us" element={<Contact/>} />
@@ -27,6 +32,11 @@ function Allroutes(){
             <Route path="/todo-list" element={<TodoList/>} />
             <Route path="/axios" element={<Axios/>} />
             <Route path="/axios-post" element={<AxiosPost/>} />
+            <Route path="/dashboard" element={<Dashboard/>} />
+            <Route path="/home" element={<DashboardHome/>} />
+            <Route path="/about" element={<AboutDashboard/>} />
+            <Route path="/settings" element={<Settings/>} />
+            <Route path="/products" element={<Products/>} />
         </Routes>
     )
 }

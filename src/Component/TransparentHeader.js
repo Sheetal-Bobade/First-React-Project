@@ -8,7 +8,7 @@ function TransparentHeader(){
   <li><Link to="#">Shop eBikes</Link></li>
   <li><Link to="/cycling">Cycling Accessories</Link></li>
   <li><Link to="#">eBike Sale</Link></li>
-  <li><Link to="/about">About AVAKA</Link></li>
+  <li><Link to="/about-avaka">About AVAKA</Link></li>
 </ul>
         </div>
        
@@ -18,7 +18,7 @@ function TransparentHeader(){
 
 <div className="menu-icons">
 <p className="eur">EUR</p>    
-<p className="eng">English</p>
+<p className="eng"><Link to="/home">Dashboard</Link></p>
 <img className="search" src="/images/search.png" alt="search"/>
 <a href="/create-account"><img className="user" src="/images/user.svg" alt="user"/></a>
 <img className="cart" src="/images/cart.png" alt="cart"/>
