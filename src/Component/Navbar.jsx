@@ -16,7 +16,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { useAppstore } from '../Pages/AppStore';
-
+import { Link } from "react-router-dom";
 const AppBar = styled(MuiAppBar, {
   
 })(({theme }) => ({
@@ -184,7 +184,7 @@ export default function Navbar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+           <Link to="/">AVAKA</Link>
           </Typography>
           <Search>
             <SearchIconWrapper>

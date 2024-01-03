@@ -11,7 +11,6 @@ import Newapp from "./Pages/newApi";
 import TodoList from "./Pages/TodoList";
 import Axios from "./Pages/Axios";
 import AxiosPost from "./Pages/AxiosPost";
-import Dashboard from "./Pages/Dashboard";
 import DashboardHome from "./Pages/Home";
 import AboutDashboard from "./Pages/About";
 import Settings from "./Pages/Settings";
@@ -32,7 +31,6 @@ function Allroutes(){
             <Route path="/todo-list" element={<TodoList/>} />
             <Route path="/axios" element={<Axios/>} />
             <Route path="/axios-post" element={<AxiosPost/>} />
-            <Route path="/dashboard" element={<Dashboard/>} />
             <Route path="/home" element={<DashboardHome/>} />
             <Route path="/about" element={<AboutDashboard/>} />
             <Route path="/settings" element={<Settings/>} />
