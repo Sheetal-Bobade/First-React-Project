@@ -42,7 +42,7 @@ function Footer(){
                 <div className="column-fourth">
                 <h2>Sign me up!</h2>
                     <ul>
-                        <li><a href="">Get special offers, exclusive product news, and event info straight to your inbox.</a></li>
+                        <li><a href="/">Get special offers, exclusive product news, and event info straight to your inbox.</a></li>
                     </ul>
                     <div>
                     <form class="newsletter">
