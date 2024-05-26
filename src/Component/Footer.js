@@ -22,20 +22,20 @@ function Footer(){
                 <div className="column-second">
                 <h3>Support</h3>
                     <ul>
-                        <li><a href="#">FAQs</a></li>
+                        <li><a href="/">FAQs</a></li>
                         <li><a href="/contact-us">Contact us</a></li>
-                        <li><a href="#">Warranty</a></li>
-                        <li><a href="#">Shipping Policy</a></li>
-                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="/">Warranty</a></li>
+                        <li><a href="/">Shipping Policy</a></li>
+                        <li><a href="/">Return Policy</a></li>
                     </ul>
                 </div>
 
                 <div className="column-third">
                 <h3>Legal</h3>
                     <ul>
-                        <li><a href="#">Payment policy</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="/">Payment policy</a></li>
+                        <li><a href="/">Privacy policy</a></li>
+                        <li><a href="/">Terms of use</a></li>
                     </ul>
                 </div>
 
