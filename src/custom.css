@@ -2,6 +2,11 @@ body{
     overflow-x: hidden;
 }
 
+.slick-slide img{
+    width:100%;
+}
+
+
 .main-slider .slick-dots {
     bottom: 20px;
     width: 98%;

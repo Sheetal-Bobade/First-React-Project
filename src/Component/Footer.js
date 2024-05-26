@@ -3,7 +3,7 @@ import { BiLogoFacebook } from "react-icons/bi";
 import { BiLogoTwitter } from "react-icons/bi";
 import { BiLogoInstagram } from "react-icons/bi";
 import { BiLogoYoutube } from "react-icons/bi";
-import { Link } from "react-router-dom";
+
 function Footer(){
     return(
         <div className="footer-sec">
