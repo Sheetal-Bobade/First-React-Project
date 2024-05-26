@@ -11,11 +11,11 @@ function Footer(){
                 <div className="column-first">
                     <h3>Inside Avaka</h3>
                     <ul>
-                        <li><a href="#">About AVAKA</a></li>
-                        <li><a href="#">Partner with us</a></li>
-                        <li><a href="#">Wholesaler application</a></li>
-                        <li><a href="#">Blogs & latest news</a></li>
-                        <li><a href="#">Become partner</a></li>
+                        <li><a href="/">About AVAKA</a></li>
+                        <li><a href="/">Partner with us</a></li>
+                        <li><a href="/">Wholesaler application</a></li>
+                        <li><a href="/">Blogs & latest news</a></li>
+                        <li><a href="/">Become partner</a></li>
                     </ul>
                 </div>
 
