@@ -1,4 +1,4 @@
-import {createContext} from "react";
+
 import '../App.css';
 import Topheader from '../Component/Topheader';
 import TransparentHeader from '../Component/TransparentHeader';
@@ -27,22 +27,22 @@ function Avaka(){
        <h2>World's Best Electric City Bikes</h2> 
        <div className="row">
         <div className="col-md-3">
-        <div className="img-div"><img src="images/shipping.png"/></div>
+        <div className="img-div"><img src="images/shipping.png" alt="shipping" /></div>
         <h3>Free shipping</h3>
         <p>from EU warehouse 2-6 days delivery time</p>
         </div>
         <div className="col-md-3">
-        <div className="img-div"><img src="images/customer.png"/></div>
+        <div className="img-div"><img src="images/customer.png" alt="customer" /></div>
         <h3>EU Customer Support</h3>
         <p>Talk to us via chat</p>
         </div>
         <div className="col-md-3">
-        <div className="img-div"><img src="images/credit.png"/></div>
+        <div className="img-div"><img src="images/credit.png" alt="credit" /></div>
         <h3>Pay by installments</h3>
         <p>Secure payment through Klarna</p>
         </div>
         <div className="col-md-3">
-        <div className="img-div"><img src="images/thumbsup.png"/></div>
+        <div className="img-div"><img src="images/thumbsup.png" alt="thumbsup" /></div>
         <h3>Warranty and Guarantee</h3>
         <p>1-Year Warranty</p>
         </div>
@@ -55,7 +55,7 @@ function Avaka(){
         <h2>eBikes on Sale</h2>
         </div>
         <div className="col-md-6 right">
-        <a>View All</a>
+        <a href="/">View All</a>
         </div>
       </div>
 

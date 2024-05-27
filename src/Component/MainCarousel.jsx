@@ -13,19 +13,19 @@ export default function MainCarousel() {
       return (
         <Slider {...settings}>
           <div>
-            <img src="/images/cycle.jpg" />
+            <img src="/images/cycle.jpg"  alt="caro-1" />
           </div>
           <div>
-          <img src="/images/cycle.jpg" />
+          <img src="/images/cycle.jpg"  alt="caro-2"  />
           </div>
           <div>
-          <img src="/images/cycle.jpg" />
+          <img src="/images/cycle.jpg"  alt="caro-3" />
           </div>
           <div>
-          <img src="/images/cycle.jpg" />
+          <img src="/images/cycle.jpg"  alt="caro-4"  />
           </div>
           <div>
-          <img src="/images/cycle.jpg" />
+          <img src="/images/cycle.jpg"  alt="caro-5"  />
           </div>
         
         </Slider>

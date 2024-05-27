@@ -1,6 +1,6 @@
-import {React, memo} from "react";
+import {memo} from "react";
 
-function ChildA({Learning, count1}){
+function ChildA({Learning}){
 return(
  console.log("child component")
 )

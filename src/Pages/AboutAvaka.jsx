@@ -25,7 +25,7 @@ function About(){
       <Topheader/>
       <Header/>
       <div className="about-main">
-      <img src="images/about-main.jpg"/>
+      <img src="images/about-main.jpg" alt="about-main-img" />
       <div className="text">
       <h3>ABOUT US</h3>
       <h1>Avaka E-Bike</h1>
@@ -46,7 +46,7 @@ function About(){
           <div className="ver-slide">
             <div className="row">
             <div className="col-md-6">
-            <img src="/images/about-slide1.png" />
+            <img src="/images/about-slide1.png" alt="about-slide-img1" />
             </div>
             <div className="col-md-6 text">
             <h3>01</h3>
@@ -59,7 +59,7 @@ function About(){
           <div className="ver-slide">
           <div className="row">
             <div className="col-md-6">
-            <img src="/images/about-slide2.png" />
+            <img src="/images/about-slide2.png" alt="about-slide-img2" />
             </div>
             <div className="col-md-6 text">
             <h3>01</h3>
@@ -71,7 +71,7 @@ function About(){
           <div className="ver-slide">
           <div className="row">
             <div className="col-md-6">
-            <img src="/images/about-slide3.png" />
+            <img src="/images/about-slide3.png" alt="about-slide-img3" />
             </div>
             <div className="col-md-6 text">
             <h3>01</h3>
