@@ -14,16 +14,16 @@ export default function SimpleSlider() {
     return (
       <Slider {...settings}>
         <div>
-          <img src="/images/slide1.jpg" />
+          <img src="/images/slide1.jpg" alt="slider1" />
         </div>
         <div>
-        <img src="/images/slide2.jpg" />
+        <img src="/images/slide2.jpg" alt="slider2" />
         </div>
         <div>
-        <img src="/images/slide3.jpg" />
+        <img src="/images/slide3.jpg" alt="slider3" />
         </div>
         <div>
-        <img src="/images/slide4.jpg" />
+        <img src="/images/slide4.jpg" alt="slider4" />
         </div>
       
       </Slider>

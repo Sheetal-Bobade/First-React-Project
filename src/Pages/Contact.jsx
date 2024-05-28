@@ -27,7 +27,7 @@ function Contact(props){
   const [count1, setCount1] = useState(0);
   const Learning = useCallback( () =>{
 
-  },[count1])
+  })
 
 
   const [add, setAdd] = useState(0);
