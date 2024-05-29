@@ -19,7 +19,7 @@ function TodoList(){
 
     function removeActivity(i){
         const updatedListData=listdata.filter((element,id)=>{
-           return i!=id;
+           return i!==id;
     
         })
          setListdata(updatedListData);
