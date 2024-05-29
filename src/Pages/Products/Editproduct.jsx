@@ -11,9 +11,9 @@ import {
   collection,
   updateDoc,
   getDocs,
-  addDoc,
+ // addDoc,
   doc,
-  get
+ // get
 } from "firebase/firestore";
 import Swal from "sweetalert2";
 
