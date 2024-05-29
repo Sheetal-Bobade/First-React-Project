@@ -137,7 +137,7 @@ function Contact(props){
       <button onClick={()=>setMinus(minus -1)}>Substraction</button>
       <span>{minus}</span><br/><br/>
       <h3>Usecallback Hook</h3><br/>
-      <ChildA Learning={Learning} count1={count1}/> 
+      
       <span>{add1}</span>
 
       <button onClick={()=> setAdd1(add1+1)}>Addition</button>
