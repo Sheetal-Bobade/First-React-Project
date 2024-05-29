@@ -37,14 +37,14 @@ export default function AddForm ({closeEvent}){
 
 
      const createUser = async() =>{
-       // const data = await addDoc(empCollectionRef, {
-          //  name: name,
-           // price: Number (price),
-           // category: category,
-           // date: String(new Date()),
+        const data = await addDoc(empCollectionRef, {
+            name: name,
+            price: Number (price),
+            category: category,
+            date: String(new Date()),
 
 
-       // });
+        });
         getUsers();
         closeEvent();
         Swal.fire("Submitted", "Your file has been submited.", "success");
