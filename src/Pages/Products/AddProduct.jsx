@@ -19,7 +19,7 @@ export default function AddForm ({closeEvent}){
     const [name, setName]= useState("");
     const [price, setPrice]= useState("");
     const [category, setCategory]= useState("");
-   // const [rows, setRows] = useState([]);
+    const [rows, setRows] = useState([]);
     const empCollectionRef = collection(db, "products");
 
     const handleNameChange = (event)=>{
