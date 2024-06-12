@@ -58,10 +58,9 @@ export default function ProductList() {
   const handleClose = () => setOpen(false);
   const handleEditClose = () => setEditOpen(false);
 
-  useEffect(() => {
-    getUsers();
-  }, []);
-
+ 
+ 
+ 
   const getUsers = async () => {
     const data = await getDocs(empCollectionRef);
     setRows(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
@@ -119,6 +118,11 @@ export default function ProductList() {
      setFormid(data);
      handleEditOpen();
   };
+
+  useEffect(() => {
+    getUsers();
+  }, [getUsers]);
+
 
   return (
 

@@ -29,7 +29,7 @@ export default function EditForm ({fid, closeEvent}){
       setName(fid.name);
       setPrice(fid.price);
       setCategory(fid.category);
-    }, [] ) ;
+    }, [fid.category, fid.id, fid.name, fid.price] ) ;
 
     const handleNameChange = (event)=>{
         setName(event.target.value);
