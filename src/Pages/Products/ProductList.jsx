@@ -119,9 +119,9 @@ export default function ProductList() {
      handleEditOpen();
   };
 
-  useEffect(() => {
-    getUsers();
-  }, [getUsers]);
+ // useEffect(() => {
+ //   getUsers();
+ // }, [getUsers]);
 
 
   return (
