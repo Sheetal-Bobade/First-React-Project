@@ -21,7 +21,7 @@ export default function EditForm ({fid, closeEvent}){
     const [name, setName]= useState("");
     const [price, setPrice]= useState("");
     const [category, setCategory]= useState("");
-    const [rows, setRows] = useState([]);
+    const [setRows] = useState([]);
     const empCollectionRef = collection(db, "products");
 
     useEffect( ()=>{

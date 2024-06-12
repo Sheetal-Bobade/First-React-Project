@@ -19,7 +19,7 @@ export default function AddForm ({closeEvent}){
     const [name, setName]= useState("");
     const [price, setPrice]= useState("");
     const [category, setCategory]= useState("");
-    const [rows, setRows] = useState([]);
+    const [setRows] = useState([]);
     const empCollectionRef = collection(db, "products");
 
     const handleNameChange = (event)=>{
@@ -37,7 +37,7 @@ export default function AddForm ({closeEvent}){
 
 
      const createUser = async() =>{
-        const data = await addDoc(empCollectionRef, {
+       await addDoc(empCollectionRef, {
             name: name,
             price: Number (price),
             category: category,
