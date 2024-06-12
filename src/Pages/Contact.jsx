@@ -1,3 +1,4 @@
+/*
 import {useEffect, useState, useContext, useRef, useReducer, useMemo, useCallback} from "react";
 import '../App.css';
 import Topheader from '../Component/Topheader';
@@ -25,7 +26,7 @@ function Contact(props){
     
   const [add1, setAdd1] = useState(0);
   const [count1, setCount1] = useState(0);
- const Learning = useCallback( () =>{
+  const Learning = useCallback( () =>{
 
   })
 
@@ -154,4 +155,4 @@ function Contact(props){
     );
 }
 
-export default Contact;
+export default Contact; */
